@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label>Adatmennyiség</label>
+        <input type="number" id="adat"> 
+        <select id="adatmenyid">
+            <option value="kB1">kB</option>
+            <option value="MB1">MB</option>
+            <option value="GB1">GB</option>
+        </select>
+        <br>
+        <label>Átviteli seb.</label>
+        <input type="range" max="1000" min="0" value="500" name="slider" id="slider">
+        <select id="adatmenyid">
+            <option value="kB">kB</option>
+            <option value="MB">MB</option>
+            <option value="GB">GB</option>
+        </select>
+        <br>
+        <label>Átviteli idő</label>
+        <label id="eredmeny"></label><br>
+        <input type="button" value="időt!" onclick="gomb()" id="gomb">
+    </form>
+</body>
+</html>
